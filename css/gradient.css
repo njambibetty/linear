@@ -1,0 +1,57 @@
+/*The *-all elements-universal selector diff browsers have different margins so set 'em to 0 making 'em  equal in all browsers*/
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}  
+html{
+	font-size: 15px;
+	font-family: Palatio, Cursive;
+}
+
+section{
+	width: 100%;
+	height: 100vh;
+	color: #FFFAFA;
+	background: linear-gradient(30deg,  #800020, #d6ae7b, #a8e063, #6832e3);
+	background-size: 400% 400%;
+	position: relative;
+	animation: change 15s ease-in-out infinite;
+}
+h1{
+	font-size: 5rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	border: 1px solid #FFFAFA;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 5rem 10rem;
+}
+@keyframes change{
+	0%{
+		background-position: 0 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0 50%;
+	}
+} 
+
+
+
+      /*#800020-burgundy*/
+      /* #FF0000, #262626, #ffc371, #19547b, #d6ae7b, #a8e063, #61045f, #8B4c70, #DE5BDD);
+	*/
+	/*FF0000-red*/
+	/*2626226-black
+	#ffc371-red
+	#19547b-blue
+	#d6ae7b-greenish
+	#a8e063-green
+	#6832e3-burple*/
+/*ease-in-out infinite;
